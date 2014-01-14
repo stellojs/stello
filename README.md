@@ -3,6 +3,7 @@
 > Generator for blogs and static sites using [Trello](https://trello.com/) as a
 > backend.
 
+
 ## Installation
 
 Install from npm:
@@ -10,6 +11,7 @@ Install from npm:
 ```
 npm install -g stello
 ```
+
 
 ## Usage (cli)
 
@@ -52,7 +54,6 @@ stello.init({
   force: true
 }, function(err){/* check for err */});
 
-
 // Once init has been called (and the `.stellorc` file created) you can leave
 // off any parameters to the functions below that were captured by init.
 
@@ -72,3 +73,19 @@ stello.server({
   cwd: 'some/path'
 });
 ```
+
+
+## Release history
+
+*(nothing yet)*
+
+
+## Contributing
+
+Please do! All I ask is that you create an issue before working on working on
+unsolicited new features.
+
+
+## License
+
+[MIT](https://raw.github.com/jtrussell/stello/master/LICENSE-MIT)
