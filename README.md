@@ -82,8 +82,8 @@ stello.server({
 
 ## Contributing
 
-Please do! All I ask is that you create an issue before working on working on
-unsolicited new features.
+Please do! All I ask is that you create an issue before working on unsolicited
+new features.
 
 
 ## License
