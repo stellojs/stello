@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var program = require('commander');
+
+program
+  .version(require('../package.json').version)
+  .usage(['init', 'fetch', 'build', 'server'].join('|'))
+  .parse(process.argv);
+
+if(!program.args.length) {
+  program.help();
+}
+
+require('../lib/cli')(program);
