@@ -54,8 +54,7 @@ stello.init({
   force: true
 }, function(err){/* check for err */});
 
-// Once init has been called (and the `.stellorc` file created) you can leave
-// off any parameters to the functions below that were captured by init.
+// `init` saves configs in `.stellorc` file
 
 stello.fetch({
   cwd: 'some/path',
