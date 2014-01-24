@@ -29,7 +29,7 @@ npm install -g stello
 Just require `'stello'` and do your thing.
 
 ```javascript
-var stello = require('stello').Stello;
+var stello = require('stello');
 
 stello.init({
   // Defaults to '.'
