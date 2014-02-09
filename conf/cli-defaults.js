@@ -12,6 +12,13 @@ module.exports = function() {
     dest: 'dist',
 
     /**
+     * Write config to stdout rather than disk
+     *
+     * Mostly for testing the cli
+     */
+    dryRun: false,
+
+    /**
      * Force a stello action
      *
      * For example, `stello init` will normally refuse to run if the current
