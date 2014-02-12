@@ -25,6 +25,11 @@ module.exports = function() {
      * working directy is non-empty.
      */
     force: false,
+    
+    /**
+     * Suppress non-error output
+     */
+    silent: false,
 
     /**
      * Where source files live
