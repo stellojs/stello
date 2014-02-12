@@ -7,16 +7,16 @@ var program = require('commander');
 program
   .version(require('../package.json').version)
   .usage(['init', 'fetch', 'build', 'server'].join('|') + '\n\n  See https://github.com/jtrussell/stello for more information')
-  .option('--dest')
+  .option('--dest <dir>')
   .option('--dry-run')
   .option('--force')
-  .option('--src')
-  .option('--tmp-dir')
-  .option('--trello-api-key')
-  .option('--trello-token')
-  .option('--trello-board-url')
-  .option('--trello-board-pages-list')
-  .option('--trello-board-blog-list')
+  .option('--src <dir>')
+  .option('--tmp-dir <dir>')
+  .option('--trello-api-key <key>')
+  .option('--trello-token <token>')
+  .option('--trello-board-url <url>')
+  .option('--trello-board-pages-list <list>')
+  .option('--trello-board-blog-list <list>')
   .parse(process.argv);
 
 if(!program.args.length) {
