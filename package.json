@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jtrussell/stello.git"
+    "url": "https://github.com/stellojs/stello.git"
   },
   "bin": {
     "stello": "bin/stello"
@@ -23,7 +23,7 @@
   "author": "jtrussell",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jtrussell/stello/issues"
+    "url": "https://github.com/stellojs/stello/issues"
   },
   "dependencies": {
     "commander": "~2.1.0",
