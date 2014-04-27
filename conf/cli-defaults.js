@@ -35,17 +35,16 @@ module.exports = function() {
      * Where source files live
      *
      * I.e. the non-node_modules and build related stuff... just styles, views,
-     * and scrits
+     * and scrits.
      */
     src: 'app',
 
     /**
-     * Where `stello` looks for temporary files
+     * Where `stello` stores its temporary files
      *
-     * E.g. compiled handlebars templates, process stylesheets... that sort of
-     * thing.
+     * E.g. data pulled down from the trello board.
      */
-    tmpDir: '.stello-tmp',
+    tmpDir: '.stello',
 
     /**
      * Your Trello developer API key
