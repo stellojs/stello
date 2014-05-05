@@ -1,6 +1,6 @@
 {
   "name": "stello",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generator for blogs and static sites using Trello as a backend",
   "main": "lib/stello.js",
   "scripts": {
