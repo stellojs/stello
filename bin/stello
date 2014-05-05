@@ -11,8 +11,6 @@ program
   .option('--dry-run')
   .option('--force')
   .option('--silent')
-  .option('--src <dir>')
-  .option('--tmp-dir <dir>')
   .option('--trello-api-key <key>')
   .option('--trello-token <token>')
   .option('--trello-board-url <url>')

@@ -15,55 +15,44 @@ npm install -g stello
 
 ## Usage (cli)
 
+Kick everything off:
+
 `stello init`
+
+Pull down fresh info from your Trello board:
 
 `stello fetch`
 
-`stello build`
+Build your site/blog/whatever:
 
-`stello server`
+`stello build`
 
 
 ## Usage (api)
 
-Just require `'stello'` and do your thing.
+Require `'stello'` and do your thing.
 
 ```javascript
 var stello = require('stello');
 
 stello.init({
-  // Will check .stellorc in cwd and process.env.TRELLO_API_KEY
-  trelloApiKey: 'my-key',
-  
-  // Will check .stellorc in cwd
-  trelloBoard: 'https://trello.com/b/asdf',
-  
-  // Where cached strello tmp stuff is kept
-  // Defaults to '.stello-tmp'
-  // Will check .stellorc in cwd
-  tmpDir: '.my-stello-stuff',
-  
-  // Where built files are placed
-  // Defaults to 'dist'
-  dest: 'www',
-  
-  // Continue if cwd is non-empty?
-  force: true
+  trelloApiKey: '36b098cd2f27e59119805f49468cbe60',
+  trelloBoardUrl: 'https://trello.com/b/u4YdciVy/stello-boilerplate',
+  trelloToken: '06e598e6521e837bb3c9b7db6a6519dc48348b9ef97f8b186929c239f2d531fe',
+  trelloBoardBlogList: 'Pages',
+  trelloBoardPagesList: 'Blog',
+  force: false
 }, function(err){/* check for err */});
 
 // `init` saves configs in `.stellorc` file
 
 stello.fetch({
-  trelloApiKey: 'my-key',
-  trelloBoard: 'https://trello.com/b/asdf',
-  tmpDir: '.my-trello-stuff', 
+  // ... Optional, pass configs or use .stellorc file
 }, function(err){/* check for err */});
 
 stello.build({
-  dest: 'www'
+  // ... Optional, pass configs or use .stellorc file
 }, function(err){/* check for err */});
-
-stello.server();
 ```
 
 

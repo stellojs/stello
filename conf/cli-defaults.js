@@ -5,13 +5,6 @@ module.exports = function() {
   return {
 
     /**
-     * Build destination folder name
-     *
-     * Where your static site will be place when you run `stello build`
-     */
-    dest: 'dist',
-
-    /**
      * Write config to stdout rather than disk
      *
      * Mostly for testing the cli
@@ -25,26 +18,11 @@ module.exports = function() {
      * working directy is non-empty.
      */
     force: false,
-    
+
     /**
      * Suppress non-error output
      */
     silent: false,
-
-    /**
-     * Where source files live
-     *
-     * I.e. the non-node_modules and build related stuff... just styles, views,
-     * and scrits.
-     */
-    src: 'app',
-
-    /**
-     * Where `stello` stores its temporary files
-     *
-     * E.g. data pulled down from the trello board.
-     */
-    tmpDir: '.stello',
 
     /**
      * Your Trello developer API key
