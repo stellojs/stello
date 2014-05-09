@@ -65,7 +65,11 @@ module.exports = function() {
      * Cards in the first list with this name will be treated as blog posts.
      * Name must match exactly.
      */
-    trelloBoardBlogList: 'Blog'
+    trelloBoardBlogList: 'Blog',
 
+    /**
+     * Whether or not to add `.stellorc` to the `.gitignore` file
+     */
+    gitIgnoreStellorc: true
   };
 };
