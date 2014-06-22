@@ -68,6 +68,18 @@ module.exports = function() {
     trelloBoardBlogList: 'Blog',
 
     /**
+     * Would you like to start working from a template?
+     */
+    installTemplate: true,
+
+    /**
+     * The template to start from
+     *
+     * Should be an `npm install`-able path
+     */
+    templateToInstall: 'stellojs/stello-tpl-default',
+
+    /**
      * Whether or not to add `.stellorc` to the `.gitignore` file
      */
     gitIgnoreStellorc: true
