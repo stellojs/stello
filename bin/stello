@@ -6,7 +6,7 @@ var program = require('commander');
 
 program
   .version(require('../package.json').version)
-  .usage(['init', 'fetch', 'build', 'server'].join('|') + '\n\n  See https://github.com/jtrussell/stello for more information')
+  .usage(['init', 'fetch', 'build'].join('|') + '\n\n  See https://github.com/jtrussell/stello for more information')
   .option('--dest <dir>')
   .option('--dry-run')
   .option('--force')
@@ -14,9 +14,6 @@ program
   .option('--trello-api-key <key>')
   .option('--trello-token <token>')
   .option('--trello-board-url <url>')
-  .option('--trello-board-pages-list <list>')
-  .option('--trello-board-blog-list <list>')
-  .option('--git-ignore-stello-rc <true|false>')
   .parse(process.argv);
 
 if(!program.args.length) {
