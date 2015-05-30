@@ -3,27 +3,6 @@ module.exports = function() {
   'use strict';
 
   return {
-
-    /**
-     * Write config to stdout rather than disk
-     *
-     * Mostly for testing the cli
-     */
-    dryRun: false,
-
-    /**
-     * Force a stello action
-     *
-     * For example, `stello init` will normally refuse to run if the current
-     * working directy is non-empty.
-     */
-    force: false,
-
-    /**
-     * Suppress non-error output
-     */
-    silent: false,
-
     /**
      * Your Trello developer API key
      *
@@ -50,38 +29,4 @@ module.exports = function() {
      * URL to the board driving your stello site
      */
     trelloBoardUrl: 'https://trello.com/b/u4YdciVy/stello-boilerplate',
-
-    /**
-     * The name of the "Pages" list
-     *
-     * Cards on the first list with this name will be treated as pages on your
-     * site.Name must match exactly.
-     */
-    trelloBoardPagesList: 'Pages',
-
-    /**
-     * The name of the "Blog" list
-     *
-     * Cards in the first list with this name will be treated as blog posts.
-     * Name must match exactly.
-     */
-    trelloBoardBlogList: 'Blog',
-
-    /**
-     * Would you like to start working from a template?
-     */
-    installTemplate: true,
-
-    /**
-     * The template to start from
-     *
-     * Should be an `npm install`-able path
-     */
-    templateToInstall: 'stellojs/stello-tpl-default',
-
-    /**
-     * Whether or not to add `.stellorc` to the `.gitignore` file
-     */
-    gitIgnoreStellorc: true
-  };
 };

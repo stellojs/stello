@@ -39,9 +39,6 @@ stello.init({
   trelloApiKey: '36b098cd2f27e59119805f49468cbe60',
   trelloBoardUrl: 'https://trello.com/b/u4YdciVy/stello-boilerplate',
   trelloToken: '06e598e6521e837bb3c9b7db6a6519dc48348b9ef97f8b186929c239f2d531fe',
-  trelloBoardBlogList: 'Pages',
-  trelloBoardPagesList: 'Blog',
-  force: false
 }, function(err){/* check for err */});
 
 // `init` saves configs in `.stellorc` file
