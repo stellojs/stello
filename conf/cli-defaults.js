@@ -28,5 +28,6 @@ module.exports = function() {
     /**
      * URL to the board driving your stello site
      */
-    trelloBoardUrl: 'https://trello.com/b/u4YdciVy/stello-boilerplate',
+    trelloBoardUrl: 'https://trello.com/b/u4YdciVy/stello-boilerplate'
+  };
 };
