@@ -19,10 +19,6 @@ Kick everything off:
 
 `stello init`
 
-Pull down fresh info from your Trello board:
-
-`stello fetch`
-
 Build your site/blog/whatever:
 
 `stello build`
@@ -42,10 +38,6 @@ stello.init({
 }, function(err){/* check for err */});
 
 // `init` saves configs in `.stellorc` file
-
-stello.fetch({
-  // ... Optional, pass configs or use .stellorc file
-}, function(err){/* check for err */});
 
 stello.build({
   // ... Optional, pass configs or use .stellorc file
