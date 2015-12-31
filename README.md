@@ -53,12 +53,6 @@ stello.build({
 *(nothing yet)*
 
 
-## Contributing
-
-Please do! All I ask is that you create an issue before working on unsolicited
-new features.
-
-
 ## License
 
 [MIT](https://raw.github.com/jtrussell/stello/master/LICENSE-MIT)
