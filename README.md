@@ -1,7 +1,6 @@
 # stello
 
-> Generator for blogs and static sites using [Trello](https://trello.com/) as a
-> backend.
+> Like map (and reduce) for [Trello](https://trello.com/) cards.
 
 
 ## Installation
@@ -19,9 +18,13 @@ Kick everything off:
 
 `stello init`
 
-Build your site/blog/whatever:
+You now have a stellorc config file in your working directory as well as some
+source templates and template helpers.
 
 `stello build`
+
+Each card from your trello board gets mapped through the index template and
+written to a `dist` directory.
 
 
 ## Usage (api)
