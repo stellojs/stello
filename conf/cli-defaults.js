@@ -23,7 +23,7 @@ module.exports = function() {
      *
      * @see https://trello.com/docs/gettingstarted/authorize.html
      */
-    trelloToken : '06e598e6521e837bb3c9b7db6a6519dc48348b9ef97f8b186929c239f2d531fe',
+    trelloToken: '06e598e6521e837bb3c9b7db6a6519dc48348b9ef97f8b186929c239f2d531fe',
 
     /**
      * URL to the board driving your stello site

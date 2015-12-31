@@ -29,12 +29,15 @@
     "async": "~0.2.10",
     "chalk": "^1.0.0",
     "commander": "~2.1.0",
+    "handlebars": "^4.0.5",
     "inquirer": "^0.4.1",
+    "kramed": "^0.4.6",
     "lodash.after": "^2.4.1",
     "lodash.find": "^2.4.1",
     "mkdirp": "~0.3.5",
     "nconf": "~0.6.9",
     "request": "~2.33.0",
-    "shelljs": "~0.2.6"
+    "shelljs": "~0.2.6",
+    "slug": "^0.9.1"
   }
 }
