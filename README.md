@@ -26,6 +26,10 @@ source templates and template helpers.
 Each card from your trello board gets mapped through the index template and
 written to a `dist` directory.
 
+We're using [Handlebars][hbs] as our templating engine. Since Trello uses
+markdown for many things stello pre-registers a `markdown` helper for you which
+will convert markdown to html.
+
 
 ## Usage (api)
 
@@ -56,3 +60,5 @@ stello.build({
 ## License
 
 [MIT](https://raw.github.com/jtrussell/stello/master/LICENSE-MIT)
+
+[hbs]: http://handlebarsjs.com/
