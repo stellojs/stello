@@ -1,12 +1,15 @@
 
 'use strict';
 
-module.exports = function(options) {
-  var ret = '';
 
-  (this.allCards || []).forEach(function(c) {
-    ret += options.fn(c);
-  });
+module.exports = function(allCards) {
+  return function(options) {
+    var ret = '';
 
-  return ret;
+    (allCards || []).forEach(function(c) {
+      ret += options.fn(c);
+    });
+
+    return ret;
+  };
 };
