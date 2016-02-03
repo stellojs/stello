@@ -1,11 +1,11 @@
 
 'use strict';
 
-module.exports = function(allCards) {
+module.exports = function(allCards, allLists) {
   return function(options) {
     var ret = '';
 
-    (this.allLists || []).forEach(function(l) {
+    (allLists || []).forEach(function(l) {
       ret += options.fn(l);
     });
 
