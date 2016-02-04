@@ -20,7 +20,7 @@
 <p>This list has {{listCards.length}} cards:</p>
 
 <ul>
-{{#each listCards}}
-  <li>{{name}}</li>
-{{/each}}
+  {{#each listCards}}
+    {{> fancyCard card=this}}
+  {{/each}}
 </ul>
