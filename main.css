@@ -1,0 +1,10 @@
+
+/**
+ * Main site styles for Stello
+ *
+ * @copyright 2016 stellojs
+ */
+
+.if.has.key {
+  display: none;
+}
