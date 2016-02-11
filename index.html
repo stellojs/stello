@@ -78,25 +78,44 @@
 
             <li>
               <h4>Gather Your Trello Info</h4>
-              <p>Stello users your public developer key and an application
-              specific token to grab pull data from your Trello boards.</p>
+              <p>Stello users your <strong>public developer key</strong> and an
+              application specific <strong>token</strong> to pull data from your
+              Trello boards.</p>
               <p>After authenticating with Trello visit <a
                 href="https://trello.com/app-key" target="_blank">this page</a>
-              to grab your public and private developer keys.</p>
-              <p>Then use the form below to get an appliation token for
-              Stello:</p>
+              to grab your public and private developer keys. Note that we will
+              only be using your public key.</p>
+              <p>Once you have a public key, paste it into the form below to get
+              an appliation token for Stello:</p>
 
-              <div class="input-group">
+              <p class="input-group">
                 <input type="text" class="form-control the-public-key" value="" placeholder="Public key goes here" />
                 <span class="input-group-btn">
-                  <a href="javascript:void(0)" class="btn btn-default disabled the-token-link">Get Your Token</a>
+                  <a href="javascript:void(0)" target="_blank" class="btn btn-default disabled the-token-link">Get Your Token</a>
                 </span>
-              </div>
+              </p>
+
+              <p>You're ready to build with Stello.</p>
             </li>
 
             <li>
-              <h4>Start Building with Stello!</h4>
-              <p>...</p>
+              <h4>Start Building with Stello</h4>
+              <p>Stello ships with two sub commands: <code>init</code> and
+              <code>build</code>. Run:</p>
+              <pre><code>stello init</code></pre>
+              <p>To prepare your workspace. You will be promped to provide your
+              public developer key and an api token for Stello to use. Finally,
+              Stello will ask you for the URL of the board you want to work
+              with.</p>
+              <p>That's it! Stello added a number of template files to your
+              working directory in a <code>./src</code> folder. Check out
+              the <a href="https://github.com/stellojs/stello">project
+              README</a> for descriptions of what these files do.</p>
+              <p>The command:</p>
+              <pre><code>stello build</code></pre>
+              <p>Will run the data from your board through the templates in
+              <code>./src</code> and store the resulting files in a
+              <code>./dist</code> folder.</p>
             </li>
           </ol>
         </div>
