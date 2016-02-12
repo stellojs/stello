@@ -42,35 +42,52 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li><a href="https://github.com/stellojs/stello">Project Home</a></li>
-              <li><a href="https://github.com/stellojs/stello/issues">Issues</a></li>
+              <li><a href="#getting-started">Getting Started</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </nav>
 
+    <a class="hidden-xs" href="https://github.com/stellojs/stello"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:9999" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
 
     <div class="container">
       <div class="col-md-6 col-md-offset-3">
         <!-- Main component for a primary marketing message or3call to action -->
         <div class="jumbotron">
           <h1>Stello</h1>
-          <p>A Generator for static content with Trello as a backend</p>
+          <p>A static content generator for <a
+            href="https://trello.com/">Trello</a>.</p>
           <p>
             <a class="btn btn-lg btn-primary" href="https://github.com/stellojs/stello" role="button">Go to the code &raquo;</a>
           </p>
         </div>
 
         <div>
+          <h3>What's This Stello Thing?</h3>
+          <p>Stello is a static content generator which uses Trello as a
+          backend. So... what does that actually mean? We like to think of
+          Stello as "map-reduce" for Trello cards. For example, you might create
+          a snippet of HTML for earch card in a board or list then combine those
+          snippets into a <a
+            href="https://github.com/hakimel/reveal.js">reveal.js</a>
+          presention.</p>
+          <p>That's just one example, in general Stello lets you easily
+          manipulate and combine the data behind your Trello boards to produce
+          anything from static sites and blogs to beautiful charts and
+          graphs.</p>
+        </div>
+
+        <div id="getting-started">
           <h3>Getting Started</h3>
           <ol>
             <li>
-              <h4>Install</h4>
+              <h4>Install Stello</h4>
               <p>Stello runs on <a href="https://nodejs.org/en/">Node.js</a>,
               you'll need to install that first if you don't have it
               already.</p>
               <p>Then simply use the Node.js package manager, npm, to get
-              Stello:</p>
+              Stello. Npm should ship with Node.js.</p>
               <p><code>npm install -g stello</code></p>
               <p>Voila! If all worked correctly you should now have access to
               the <code>stello</code> command.</p>
@@ -91,11 +108,11 @@
               <p class="input-group">
                 <input type="text" class="form-control the-public-key" value="" placeholder="Public key goes here" />
                 <span class="input-group-btn">
-                  <a href="javascript:void(0)" target="_blank" class="btn btn-default disabled the-token-link">Get Your Token</a>
+                  <a href="javascript:void(0)" target="_blank" class="btn btn-primary disabled the-token-link">Get Your Token</a>
                 </span>
               </p>
 
-              <p>You're ready to build with Stello.</p>
+              <p>You're ready to build with Stello :).</p>
             </li>
 
             <li>
@@ -118,6 +135,15 @@
               <code>./dist</code> folder.</p>
             </li>
           </ol>
+        </div>
+
+        <div>
+          <h3>Licensing</h3>
+          <p>Stello's source, this site, and in general any code put out by the <a
+            href="https://github.com/stellojs">stellojs</a> organization is
+          released under The MIT Licenses.</p>
+          <p>Stello and the stellojs organization are not affiliated with
+          Trello, Inc. in any way. But we think they're pretty cool.</p>
         </div>
 
         <footer class="text-muted">

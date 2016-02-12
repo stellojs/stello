@@ -5,6 +5,35 @@
  * @copyright 2016 stellojs
  */
 
-.if.has.key {
-  display: none;
+.jumbotron {
+  background-image: url("./paisley.png");
+}
+
+.jumbotron, pre, h1, h2, h3, a,
+.navbar-default .navbar-brand {
+  color: indianred;
+}
+
+.navbar-default, pre {
+  background-color: #f6f6f6;
+}
+
+a:hover, .navbar-default .navbar-brand:hover {
+  color: firebrick;
+}
+
+a {
+  font-weight: bold;
+}
+
+.btn-primary {
+  color: white;
+  background-color: indianred;
+  border: 1px solid firebrick;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: firebrick;
+  border: 1px solid firebrick;
 }

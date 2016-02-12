@@ -1,7 +1,7 @@
 
 # Stello
 
-> GitHub pages for Stello.
+> A humble site for Stello.
 
 
 ## License
