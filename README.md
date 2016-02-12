@@ -28,15 +28,15 @@ markdown for many things stello pre-registers a `markdown` helper for you which
 will convert markdown to html.
 
 After running `stello init` you will notice a number of `index-*.hbs` files in
-the new `src` folder. These are you template files which Trello cards, lists,
+the new `./src` folder. These are your template files which Trello cards, lists,
 and boards get mapped through. The generated files will be given a name that
 includes the item's position and sluggified name. By default we generate `html`
 files but if a different extension is preffered, e.g. `.md`, just include that
-extension in the template file name. For example: `index.md.hbs`; Stello strips
+extension in the template file name. For example: `index-card.md.hbs`; Stello strips
 away the `.hbs` then assumes whatever extension remains.
 
-In `src/helpers` you will find a number of `.js` files which define the handle
-bars helpers available to you at runtime. Each file should export a function
+In `./src/helpers` you will find a number of `.js` files which define the
+handlebars helpers available to you at runtime. Each file should export a function
 with returns a valid helper. The function will be passed references to arrays
 containing all board cards and all board lists, useful for working in a context
 other than the top level.
