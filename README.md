@@ -41,6 +41,18 @@ with returns a valid helper. The function will be passed references to arrays
 containing all board cards and all board lists, useful for working in a context
 other than the top level.
 
+**Warning**: The `init` sub command creates a config file in your working
+directory: `./.stellorc`. This file stores your responses to the different
+prompts from `init`. If you want to add this file to version control **be sure
+not to include your actual application token**. Instead, leave this field blank
+and rely on process variables to supply this value when building.
+
+**Warning**: At present the `init` sub command completely replaces anything in
+`./src` with a fresh set of source files as specified by the template you are
+using. That is, we do not attempt to save or merge any existing content in
+`./src` if there is any. If you need to run `stello init` and have things in
+`./src` you want to save be sure to do so before running the command.
+
 ```shell
 stello build
 ```
