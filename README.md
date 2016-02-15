@@ -20,26 +20,36 @@ Kick everything off:
 stello init
 ```
 
-You now have a stellorc config file in your working directory as well as some
-source templates and template helpers.
+You should now have a `./.stellorc` config file in your working directory as
+well as a `./src` folder containing templates and helper files. Stello uses
+[Handlebars][hbs] as its templating engine. Looking in `./src` you should find
+some subset of:
 
-We're using [Handlebars][hbs] as our templating engine. Since Trello uses
-markdown for many things stello pre-registers a `markdown` helper for you which
-will convert markdown to html.
+- `helpers/` a folder containing handlebars helpers. When you build with Stello
+  each `*.js` file in this directory will be converted into a helper with the
+  same name. Each file should export a function with returns a valid handlebars
+  helper. The exported function will be passed references to arrays containing
+  all board cards and all board lists, useful for working in a context other
+  than the top level.
+- `partials/` similar to the helpers folder, each `*.hbs` file in this folder
+  will be converted to a handlebars partial with the same name.
+- `index-board.*.hbs`- A board template file. Stello will create a new file in
+  `./dist` using this template, applying your entire board's data to it
+- `index-card.*.hbs` - A list template file. Stello will create a new file in
+  `./dist` using this template for each list on your board.
+- `index-list.*.hbs` - A card template file. Stello will create a new file in
+  `./dist` using this template for each card on your board.
 
-After running `stello init` you will notice a number of `index-*.hbs` files in
-the new `./src` folder. These are your template files which Trello cards, lists,
-and boards get mapped through. The generated files will be given a name that
-includes the item's position and sluggified name. By default we generate `html`
-files but if a different extension is preffered, e.g. `.md`, just include that
-extension in the template file name. For example: `index-card.md.hbs`; Stello strips
+Trello cards, lists, and boards get mapped through the template files listed
+above. The generated files in `./dist` will be given a name that includes the
+item's position in Trello land and its sluggified name. By default we generate
+`html` files but if a different extension is preffered, e.g. `.md`, just include
+that extension in the template file name. For example, the template
+`./src/index-card.md.hbs` will result in `./dist/index-card.md`; Stello strips
 away the `.hbs` then assumes whatever extension remains.
 
-In `./src/helpers` you will find a number of `.js` files which define the
-handlebars helpers available to you at runtime. Each file should export a function
-with returns a valid helper. The function will be passed references to arrays
-containing all board cards and all board lists, useful for working in a context
-other than the top level.
+Since Trello uses markdown for many things stello pre-registers a `markdown`
+helper which will convert markdown to html. E.g.: `{{markdown card.desc}}`.
 
 **Warning**: The `init` sub command creates a config file in your working
 directory: `./.stellorc`. This file stores your responses to the different
@@ -57,8 +67,9 @@ save be sure to do so before running the command.
 stello build
 ```
 
-Each card from your trello board gets mapped through the index template and
-written to a `dist` directory.
+Stello looks in `./src` for `index-[card|list|board].\*.hbs` templates, maps
+card/list/board data through them as appropriate and stores the resulting file
+in `./dist`.
 
 
 ## Usage (api)
