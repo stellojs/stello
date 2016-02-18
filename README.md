@@ -1,4 +1,4 @@
-# stello
+# Stello
 
 > Like map (and reduce) for [Trello](https://trello.com/) cards.
 
@@ -24,7 +24,7 @@ You now have a stellorc config file in your working directory as well as some
 source templates and template helpers.
 
 We're using [Handlebars][hbs] as our templating engine. Since Trello uses
-markdown for many things stello pre-registers a `markdown` helper for you which
+markdown for many things Stello pre-registers a `markdown` helper for you which
 will convert markdown to html.
 
 After running `stello init` you will notice a number of `index-*.hbs` files in
