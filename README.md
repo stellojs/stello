@@ -1,6 +1,6 @@
 # Stello
 
-> Like map (and reduce) for [Trello](https://trello.com/) cards.
+> A static content generator using [Trello](https://trello.com/) as a backend.
 
 
 ## Installation
