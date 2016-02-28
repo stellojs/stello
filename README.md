@@ -27,14 +27,14 @@ some subset of:
 
 - `helpers/` a folder containing handlebars helpers. When you build with Stello
   each `*.js` file in this directory will be converted into a helper with the
-  same name. Each file should export a function with returns a valid handlebars
+  same name. Each file should export a function which returns a valid handlebars
   helper. The exported function will be passed references to arrays containing
   all board cards and all board lists, useful for working in a context other
   than the top level.
 - `partials/` similar to the helpers folder, each `*.hbs` file in this folder
-  will be converted to a handlebars partial with the same name.
+  will be converted into a handlebars partial registered under the same name.
 - `index-board.*.hbs`- A board template file. Stello will create a new file in
-  `./dist` using this template, applying your entire board's data to it
+  `./dist` using this template, applying your entire board's data to it.
 - `index-card.*.hbs` - A list template file. Stello will create a new file in
   `./dist` using this template for each list on your board.
 - `index-list.*.hbs` - A card template file. Stello will create a new file in
