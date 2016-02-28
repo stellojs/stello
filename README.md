@@ -67,10 +67,143 @@ save be sure to do so before running the command.
 stello build
 ```
 
-Stello looks in `./src` for `index-[card|list|board].\*.hbs` templates, maps
+Stello looks in `./src` for `index-[card|list|board].*.hbs` templates, maps
 card/list/board data through them as appropriate and stores the resulting file
 in `./dist`.
 
+
+### Working With Templates
+
+#### Card Templates
+
+> `src/index-card.*.hbs`
+
+This template will have the following variables available to it:
+
+- `allCards`: An array of card objects (see below)
+- `allLists`: An array of list objects (see the section on list templates)
+- `card`: A single card's data, we provide an example below from the Trello api docs.
+
+```javascript
+{
+  "id": "52ee644502ff20e0433f2f4b",
+  "checkItemStates": [],
+  "closed": false,
+  "dateLastActivity": "2014-02-02T15:36:00.959Z",
+  "desc": "Hello there! Here's a markdown description.",
+  "descData": {
+    "emoji": {}
+  },
+  "idBoard": "52ee64073f38ee10617ecc09",
+  "idList": "52ee64073f38ee10617ecc0a",
+  "idMembersVoted": [],
+  "idShort": 1,
+  "idAttachmentCover": null,
+  "manualCoverAttachment": false,
+  "idLabels": [],
+  "name": "Hello World",
+  "pos": 65535,
+  "shortLink": "2yB1hjW7",
+  "badges": {
+    "votes": 0,
+    "viewingMemberVoted": false,
+    "subscribed": false,
+    "fogbugz": "",
+    "checkItems": 0,
+    "checkItemsChecked": 0,
+    "comments": 0,
+    "attachments": 0,
+    "description": true,
+    "due": null
+  },
+  "due": null,
+  "email": "fake@email.com",
+  "idChecklists": [],
+  "idMembers": [],
+  "labels": [],
+  "shortUrl": "https://trello.com/c/2yB1hjW7",
+  "subscribed": false,
+  "url": "https://trello.com/c/2yB1hjW7/1-hello-world"
+}
+```
+
+#### List Templates
+
+> `src/index-list.*.hbs`
+
+This template will have the following variables available to it:
+
+- `allCards`: An array of card objects (see the section on card templates)
+- `allLists`: An array of list objects (see below)
+- `list`: A single lists' data, we provide an example below from the Trello api docs.
+- `listCards`: An arry of card objects in this list
+
+```javascript
+{
+  "id": "52ee64073f38ee10617ecc0a",
+  "name": "Pages",
+  "closed": false,
+  "idBoard": "52ee64073f38ee10617ecc09",
+  "pos": 16384,
+  "subscribed": false
+}
+```
+
+#### Board Templates
+
+> `src/index-board.*.hbs`
+
+This template will have the following variables available to it:
+
+- `allCards`: An array of card objects (see the section on card templates)
+- `allLists`: An array of list objects (see the section on list templates)
+- `board`: A single board's data, we provide an example below from the Trello api docs.
+
+```javascript
+{
+  "id": "52ee64073f38ee10617ecc09",
+  "name": "Stello Boilerplate",
+  "desc": "",
+  "descData": null,
+  "closed": false,
+  "idOrganization": null,
+  "pinned": false,
+  "url": "https://trello.com/b/u4YdciVy/stello-boilerplate",
+  "shortUrl": "https://trello.com/b/u4YdciVy",
+  "prefs": {
+    "permissionLevel": "public",
+    "voting": "disabled",
+    "comments": "members",
+    "invitations": "members",
+    "selfJoin": false,
+    "cardCovers": true,
+    "cardAging": "regular",
+    "calendarFeedEnabled": false,
+    "background": "blue",
+    "backgroundImage": null,
+    "backgroundImageScaled": null,
+    "backgroundTile": false,
+    "backgroundBrightness": "dark",
+    "backgroundColor": "#0079BF",
+    "canBePublic": true,
+    "canBeOrg": true,
+    "canBePrivate": true,
+    "canInvite": true
+  },
+  "labelNames": {
+    "green": "",
+    "yellow": "",
+    "orange": "",
+    "red": "",
+    "purple": "",
+    "blue": "",
+    "sky": "",
+    "lime": "",
+    "pink": "",
+    "black": ""
+  }
+}
+```
 
 ## Usage (api)
 
