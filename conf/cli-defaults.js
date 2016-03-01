@@ -11,7 +11,7 @@ module.exports = function() {
      *
      * @see https://trello.com/1/appKey/generate
      */
-    trelloApiKey: '36b098cd2f27e59119805f49468cbe60',
+    trelloApiKey: 'b705841c7bbc5fe0a0c7df2a4663d280',
 
     /**
      * The Trello token authirizing `stello` to read your information
@@ -23,11 +23,11 @@ module.exports = function() {
      *
      * @see https://trello.com/docs/gettingstarted/authorize.html
      */
-    trelloToken: '06e598e6521e837bb3c9b7db6a6519dc48348b9ef97f8b186929c239f2d531fe',
+    trelloToken: '5dc81dc8e918d0773e79c2a1492b5b8096790f270127c3b456ca24eb0171f730',
 
     /**
      * URL to the board driving your stello site
      */
-    trelloBoardUrl: 'https://trello.com/b/u4YdciVy/stello-boilerplate'
+    trelloBoardUrl: 'https://trello.com/b/bkEURdPR/stello-demo-board'
   };
 };
