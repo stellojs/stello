@@ -1,6 +1,6 @@
 {
   "name": "stello",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Map (and reduce) for Trello cards.",
   "main": "lib/stello.js",
   "scripts": {
