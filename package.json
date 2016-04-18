@@ -39,6 +39,6 @@
     "request": "~2.33.0",
     "shelljs": "~0.2.6",
     "slug": "^0.9.1",
-    "stello-tpl-starter": "*"
+    "stello-tpl-starter": "^0.0.2"
   }
 }
