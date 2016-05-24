@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3c//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns='http://www.w3.org/2000/svg'
+     xmlns:xlink='http://www.w3.org/1999/xlink'
+     height="2in"
+     width="2in"
+     viewBox="0 0 160 160">
+  <g transform="translate(80, 80)">
+  <path stroke="indianred"
+        stroke-width="20"
+        stroke-opacity="0.5"
+        stroke-linecap="round"
+        fill="none"
+        d="M -40.15035054457321 57.34064310022944 A 70 70 0 1 0 -40.15035054457321 -57.340643100229435">
+  </path>
+  <path stroke="indianred"
+        stroke-width="20"
+        stroke-linecap="round"
+        fill="none"
+        d="M -57.34064310022941 -40.15035054457325 A 70 70 0 0 0 -57.34064310022942 40.15035054457325">
+  </path>
+  </g>
+</svg>
