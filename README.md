@@ -1,7 +1,7 @@
-# Stello
-
+#  Stello
 > A static content generator using [Trello](https://trello.com/) as a backend.
 
+![logo](http://stellojs.github.io/stello/red-on-transparent.svg)
 
 ## Installation
 
